@@ -1,5 +1,4 @@
-﻿<h1>{{title}}</h1>
-<h3>Employee</h3>
+﻿<img src="redbull.jpg" width="100%" height="100%">
 <hr />
 <form [formGroup]="employeeForm" (ngSubmit)="save()" #formDir="ngForm" novalidate>
 
@@ -27,12 +26,12 @@
         </span>
     </div>
     <div class="form-group row">
-        <label class="control-label col-md-12" for="Department">Department</label>
+        <label class="control-label col-md-12" for="Department">Team</label>
         <div class="col-md-4">
             <input class="form-control" type="text" formControlName="department">
         </div>
         <span class="text-danger" *ngIf="department.invalid && formDir.submitted">
-            Department is required
+            Team is required
         </span>
     </div>
     <div class="form-group row">
